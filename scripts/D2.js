@@ -4,9 +4,18 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// inizializzo 3 variabili, alle prime due assegno due valori casuali, alla terza assegno il valore zero
+// (per non fare in modo che sia undefined) ma poi la utilizzeremo per salvare il numero maggiore
+
 let number1 = 20;
 let number2 = 30;
-let majorNumber;
+let majorNumber = 0;
+
+// Controllo se il primo numero è maggiore del secondo, se è così assegno majorNumber a number1
+// e lo stampo sul log. Poi controllo sei i due numeri sono uguali, in quel caso utilizzeremo
+// un log per dire ll'utente che i due numeri sono identici. Infine se il numero 1 non è maggiore
+// del numero 2 e non è uguale del numero 2 significa che il numero 2 è il numero maggiore, quindi
+// useremo un log per indicarlo.
 
 if (number1 > number2) {
   majorNumber = number1;
@@ -24,8 +33,13 @@ if (number1 > number2) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let randomNumber = 35;
+// Inizializzo una variabile e le assegno un valore.
 
+let randomNumber = 35;
+// randomNumber = 12;
+
+// controllo se il valore assegnato è DIVERSO da 5, se questa affermazione risulta TRUE
+// stampo sul log la fras "not equal"
 if (randomNumber !== 5) {
   console.log("not equal");
 }
@@ -36,8 +50,15 @@ if (randomNumber !== 5) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+//randomNumber = 12;
+
+// utilizzo operatore modulo per controllare se il numero è divisibile per 5,
+// se il risultato del modulo è uguale a zero significa che il numero è divisibile
+// perciò stamperà un messaggio sul log.
 if (randomNumber % 5 === 0) {
   console.log(randomNumber + " è divisibile per 5.");
+} else {
+  console.log(randomNumber + " non è divisibile per 5.");
 }
 
 /* ESERCIZIO 4
