@@ -84,10 +84,15 @@ if (
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// inizializzo 2 variabili la prima è il saldo del carello e la seconda è saldo
+// al checkout. Poi inizializzo una costante alla quale assegno il costo fisso della spedizione.
 let totalShoppingCart = 50;
 const shippingCost = 10;
 let checkOut;
 
+// controllo se il saldo nel carello è maggiore di 50$. Nel caso in cui lo fosse il saldo al check out
+// sarà uguale a quello del carello, in caso contrario dovremmo aggiungere al costo del carello
+// anche i costi di spedizione fissi.
 if (totalShoppingCart > 50) {
   checkOut = totalShoppingCart;
   console.log("This is your total expense: " + checkOut);
@@ -103,9 +108,11 @@ if (totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// inizializzo una variabile per salvarmi successivamente il valore dello sconto
 let discount;
 totalShoppingCart = 50;
 
+// rispetto all'esercizio precedente l'unica cosa aggiunta è il calcolo dello sconto che viene calcolato solo sul prezzo dei prodotti.
 if (totalShoppingCart > 50) {
   discount = (totalShoppingCart / 100) * 20;
   checkOut = totalShoppingCart - discount;
@@ -124,16 +131,22 @@ if (totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// Inizializzo 3 variabili per salvarmi 3 numeri interi.
 let randomNumber1 = 10;
 let randomNumber2 = 20;
 let randomNumber3 = 30;
 
+// Inizializzo 3 variabili che mi serviranno successivamente per salvarmi,
+// il numero maggiore, quello minore e quello intermedio.
 let highNumber;
 let middleNumber;
 let smallNumber;
 
+// Inizializzo un array vuoto per salvarmi i numeri
 const arrayOfRandomNumber = [];
 
+// faccio i check necessari per verificare quale dei 3 numeri sia quello minore,
+// quello intermedio e quello minore salvandoli nelle rispettive variabili
 if (randomNumber1 >= randomNumber2) {
   highNumber = randomNumber1;
   smallNumber = randomNumber2;
@@ -164,8 +177,10 @@ if (randomNumber1 >= randomNumber2) {
   }
 }
 
+// Una volta ottenuti li inserisco in un array.
 arrayOfRandomNumber.push(highNumber, middleNumber, smallNumber);
 
+// Poi li stampo in ordine decrescente, dal più grande al più piccolo.
 console.log(
   "Questo è il numero più grande: " +
     highNumber +
@@ -184,10 +199,13 @@ console.log(
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 // let randomValue = "Alessio";
+// Inizializzo una variabile e gli assegno un valore.
 let randomValue = 10;
 
+// Salvo in una variabile il TIPO della variabile che ho appena inizializzato.
 let type = typeof randomValue;
 
+// Controllo se il tipo della variabile è di tipo numerico e ne stampo il tipo.
 if (type === "number") {
   console.log("Il valore inserito è un numero.");
 } else {
@@ -200,9 +218,12 @@ if (type === "number") {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// Inizializzo una variabile e gli assegno un valore.
 let rNumber = 17;
 // rNumber = 10;
 
+// Uso l'operatore modulo per verificare se dividendo il numero diviso 2
+// si ottenga o meno un resto. Se c'è il resto il numero e pari se non c'è il numero è pari.
 if (rNumber % 2 === 0) {
   console.log(rNumber + " è un numero pari");
 } else {
